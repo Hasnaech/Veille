@@ -1238,4 +1238,334 @@ Google et Amazon ont créé des certifications que les professionnels affichent 
 
 ---
 
-*Rapport généré le 2026-06-03 — Mise à jour 2026-08-12 — 63+ sources analysées*
+---
+
+---
+
+## MODULE 4 — DE L'INVITE AU SYSTÈME : PROMPT → LOOP → GRAPH
+
+> **Objectif :** Cartographier la nouvelle hiérarchie de compétences IA qui s'impose en 2026 — du simple "je tape une question" au pilotage de systèmes multi-agents autonomes — et identifier ce que les managers non-techniques doivent comprendre (pas maîtriser) pour rester pertinents.
+
+---
+
+### Section 19 — Les 3 couches de l'IA en entreprise (2026)
+
+En 2026, la compétence IA ne se résume plus au **prompt** (l'art de bien formuler une question à un modèle). Elle s'est stratifiée en **3 couches distinctes**, chacune représentant un saut qualitatif dans la façon dont les organisations exploitent l'intelligence artificielle.
+
+```
+COUCHE 1 — PROMPT ENGINEERING
+"Je rédige une instruction claire à l'IA"
+↓
+COUCHE 2 — LOOP ENGINEERING  
+"Je conçois un système qui rédige les instructions à ma place"
+↓
+COUCHE 3 — GRAPH ENGINEERING
+"Je structure l'organisation de plusieurs agents IA comme on organise une équipe"
+```
+
+**La rupture fondamentale :** on est passé de l'IA comme *outil de productivité individuelle* à l'IA comme *infrastructure organisationnelle*.
+
+> [SNIPPET VÉRIFIÉ] *"The copilots of 2024-2025 suggested; the agents of 2026 execute."* — IA-insights.fr, 2026
+
+---
+
+### Section 20 — Couche 1 : Le Prompt Engineering (2023-2025)
+
+**Ce que c'est :** L'art de formuler une instruction précise à un modèle d'IA pour obtenir un résultat utile.
+
+**Analogie manager :** Écrire un brief clair à un assistant. Plus le brief est précis, meilleur est le résultat.
+
+**Ce que les managers utilisent concrètement :**
+- Rédiger un compte-rendu de réunion depuis des notes brutes
+- Résumer un rapport de 40 pages en 5 points clés
+- Générer des variantes d'un email difficile
+- Poser des questions sur des données métier
+
+**Données adoption 2026 :**
+- 50% des Français utilisent l'IA (Aivancity 2026, vs 25% en 2025)
+- 7% seulement en usage professionnel quotidien (Jean-Jaurès 2025)
+- La majorité des usages restent au niveau "prompt simple" — la couche 1
+
+**Limite du prompt seul :** Un prompt produit une réponse, pas un flux de travail. Si la tâche nécessite plusieurs étapes, des décisions conditionnelles ou des vérifications, le prompt seul est insuffisant. C'est là qu'intervient la boucle.
+
+---
+
+### Section 21 — Couche 2 : Le Loop Engineering (2025-2026)
+
+**Origine du concept :** Terme co-créé en **juin 2026 par Addy Osmani et Boris Cherny** (ingénieurs Google) pour décrire la compétence émergente clé de l'ère agentique.
+
+**Ce que c'est :** Concevoir un *système* qui formule les instructions à la place du manager — et qui gère les vérifications, les reprises, les branchements et les conditions d'arrêt.
+
+> [SNIPPET VÉRIFIÉ] *"Loop engineering is the practice of building a system that does the prompting for you. You stop being the person who types tasks into an AI agent and start being the person who designs the automated system that does it — one that picks the next task, sends it to the agent, checks the output, decides whether to retry or move on, and runs again."* — Medium / Vovance, Jun 2026
+
+**Analogie manager :** Passer de *faire* le travail à *concevoir* le processus. Comme un manager qui ne rédige plus les rapports lui-même, mais conçoit le processus qui les génère automatiquement.
+
+**Ce qu'une boucle agentique fait concrètement :**
+1. L'agent reçoit un objectif (pas une instruction unique)
+2. Il choisit son prochain outil/action
+3. Il exécute et reçoit un retour de l'environnement
+4. Il évalue si l'objectif est atteint → si non, il recommence
+5. Condition de fin → résultat livré
+
+**Exemple concret pour un manager :**
+- **Avec prompt** : "Résume ce rapport."
+- **Avec loop** : L'agent lit le rapport → vérifie si des données manquent → va les chercher dans le CRM → vérifie la cohérence → rédige le résumé → se relit → envoie si critères atteints. Le manager ne tape rien.
+
+**Avantage clé :**
+
+> [SNIPPET VÉRIFIÉ] *"Enterprise workflows deviate from the script constantly — a document is malformed, an API times out, a customer's request doesn't match the expected pattern. A pipeline breaks on that. A loop absorbs it."* — explainx.ai, 2026
+
+**Ce que le manager doit comprendre (pas maîtriser) :**
+- Définir l'objectif, pas l'instruction
+- Définir les critères de succès et d'arrêt
+- Savoir quand intervenir (human-in-the-loop)
+- Évaluer les outputs plutôt que les étapes
+
+---
+
+### Section 22 — Couche 3 : Le Graph Engineering (mi-2026)
+
+**Ce que c'est :** Concevoir une **organisation de plusieurs agents IA** — chacun ayant un rôle, des outils, des permissions et des liens de délégation — comme on conçoit un organigramme.
+
+> [SNIPPET VÉRIFIÉ] *"Graph engineering makes multi-agent organizations programmable, where loops define one agent's behavior and graphs represent the org structure connecting many agents."* — MarkTechPost, Jul 2026
+
+**Analogie manager :** Rédiger les fiches de poste, les lignes hiérarchiques et les circuits de validation de toute une équipe — sauf que l'équipe est entièrement composée d'agents IA.
+
+**Structure d'un graphe multi-agents :**
+- **Nœuds** = agents (chacun avec un rôle défini : agent recherche, agent rédaction, agent validation, agent envoi…)
+- **Arêtes** = transferts de tâches entre agents
+- **Manager-agent** = agent coordinateur qui délègue aux agents-spécialistes
+
+**Exemple concret :**
+
+```
+Agent Coordinateur (manager)
+├── Agent Recherche (scraping, API, bases de données)
+├── Agent Analyse (synthèse, détection anomalies)
+├── Agent Rédaction (rapport, email, présentation)
+└── Agent Validation (vérification cohérence, conformité RGPD)
+```
+
+**Frameworks dominants en 2026 (pour les équipes techniques) :**
+
+| Framework | Usage principal | Adoption |
+|-----------|----------------|---------|
+| **LangGraph** | Production enterprise, haute criticité | Dominant (Anthropic, LinkedIn, Uber) |
+| **CrewAI** | Prototypage, automatisation départementale | Préféré des Product Managers |
+| **AutoGen** | Recherche, projets académiques | Spécialisé |
+| **OpenAI Swarm** | Workflows simples avec handoffs | Adapté aux cas d'usage étroits |
+
+> [SNIPPET VÉRIFIÉ] *"For Product Managers, CrewAI is the definitive winner for business-centric automation, with its ability to map AI to human organizational structures (Roles, Tasks, Managers) making it the most intuitive tool for scaling departmental productivity."* — LangChain Resources, 2026
+
+**Ce que le manager non-technique doit comprendre :**
+- Définir les *rôles* des agents comme on rédige une fiche de poste
+- Définir les *workflows* comme on dessine un process métier
+- Définir les *garde-fous* : quelles décisions nécessitent une validation humaine
+
+---
+
+### Section 23 — Le RAG et l'Agentic RAG : la mémoire des agents
+
+**RAG = Retrieval-Augmented Generation** : un agent IA qui, avant de répondre, va chercher de l'information dans des bases de données spécifiques (documents internes, CRM, ERP, bases de connaissances). L'IA ne "hallucine" plus — elle s'appuie sur des sources réelles.
+
+**Pourquoi c'est crucial pour les managers :**
+- L'IA "générale" (ChatGPT, Copilot sans configuration) ne connaît pas vos données internes
+- Avec RAG, l'agent IA peut interroger vos propres documents : contrats, politiques RH, base client, historique projets
+- Réponses ancrées dans votre réalité d'entreprise, pas dans des généralités
+
+**L'évolution en 2026 — RAG → Agentic RAG :**
+
+| Type | Fonctionnement | Limite |
+|------|---------------|--------|
+| **RAG classique** | Cherche → Génère (pipeline linéaire fixe) | Échoue sur les questions complexes multi-sources |
+| **Agentic RAG** | Cherche → Évalue → Re-cherche si insuffisant → Génère | Plus lent, mais traite les requêtes complexes |
+| **GraphRAG** | Interroge un graphe de connaissances (relations entre entités) | Optimal pour compliance, legal, medical |
+
+> [SNIPPET VÉRIFIÉ] *"In 2026, retrieval-augmented generation is no longer a feature layer — it is enterprise AI infrastructure."* — Techment, 2026
+
+**Chiffres marché :**
+- Marché RAG : **1,94 milliard USD en 2025** → **9,86 milliards USD en 2030** (CAGR +38%)
+- 85% des entreprises adopteront des systèmes RAG hybrides (vecteur + graphe) d'ici fin 2026
+
+**GraphRAG — cas d'usage concrets :**
+- **Finance :** Analyser les relations entre entreprises, dirigeants, dépôts réglementaires et événements marchés
+- **Healthcare :** Interactions médicamenteuses, effets indésirables → réduction de 31% des événements indésirables
+- **Legal :** Navigation entre clauses contractuelles, jurisprudence et obligations réglementaires
+
+---
+
+### Section 24 — Adoption et chiffres clés 2026
+
+**L'explosion agentique en chiffres :**
+
+| Indicateur | Donnée | Source |
+|-----------|--------|--------|
+| Part des apps enterprise embarquant un agent IA | **40%** d'ici fin 2026 (vs < 5% en 2025) | Gartner, Août 2025 |
+| Entreprises ayant adopté des agents IA | **72%** (toutes formes) | Agentic AI Institute, 2026 |
+| En production (vs expérimentation) | **23%** seulement | Digitalapplied, 2026 |
+| Marché agentic AI 2026 | **9,9 milliards USD** | Multiple sources |
+| CAGR agentic AI 2026-2034 | **+40%/an** vers 236 milliards | Accelirate, 2026 |
+| Rôles G2000 impliquant un agent IA d'ici 2026 | **40%** des postes | Gartner |
+| Entreprises avec gouvernance IA adéquate | **13% seulement** | Elevateconsult, 2026 |
+| CAIO (Chief AI Officer) présents dans les grandes entreprises | **76%** | Multiple sources |
+
+> [SNIPPET VÉRIFIÉ] *"Almost four in five enterprises have adopted AI agents in some form, yet only one in nine runs them in production."* — Agentic AI Institute, 2026
+
+---
+
+### Section 25 — Ce que les managers doivent savoir (et ne pas savoir)
+
+**Le piège de la formation actuelle :** Apprendre à "utiliser ChatGPT" en 2026, c'est apprendre à conduire une voiture quand l'entreprise passe aux flottes autonomes. Nécessaire mais insuffisant.
+
+**Ce que le manager NON-TECHNIQUE doit comprendre (mais pas coder) :**
+
+| Compétence | Niveau requis | Analogie |
+|-----------|--------------|---------|
+| Définir un objectif pour un agent (vs une instruction) | **Comprendre** | Briefer un consultant, pas un stagiaire |
+| Évaluer si l'output d'un agent est fiable | **Pratiquer** | Vérifier le travail d'un collaborateur |
+| Définir des critères d'arrêt (human-in-the-loop) | **Comprendre** | Savoir quand escalader une décision |
+| Concevoir les rôles d'une équipe d'agents | **Comprendre** | Rédiger une fiche de poste |
+| Comprendre ce que l'agent peut/ne peut pas accéder | **Connaître** | Gérer les accès et habilitations |
+| Détecter quand un agent déraille | **Pratiquer** | Superviser sans micro-manager |
+
+**Ce que le manager ne doit PAS avoir à faire :**
+- Coder un pipeline LangGraph
+- Comprendre les embeddings vectoriels
+- Configurer une base de données RAG
+- Optimiser les tokens ou les coûts d'API
+
+**Le nouveau rôle du manager à l'ère agentique :**
+
+> [SNIPPET VÉRIFIÉ] *"Managers must let go — performance is now evaluated on the pertinence of results rather than hours spent at the screen. Agentic AI will transform operators from manual responders to supervisors and orchestrators of AI-driven operations."* — Infos-entreprises.fr + Deloitte, 2026
+
+---
+
+### Section 26 — Les nouveaux risques managériaux (spécifiques aux agents)
+
+Les agents IA en boucle autonome introduisent des risques **qualitativement différents** du simple prompt :
+
+**Risque #1 — L'automatisation des erreurs à grande vitesse**
+Un prompt erroné produit une mauvaise réponse. Une boucle agentique errante exécute des centaines d'actions incorrectes avant que quelqu'un s'en aperçoive.
+
+> [SNIPPET VÉRIFIÉ] *"The AI layer can make hundreds of decisions in seconds. The reasoning behind these decisions is not always easy for managers to understand."* — Strata.io, 2026
+
+**Risque #2 — Le Shadow AI agentique**
+Des agents non-approuvés, configurés par des collaborateurs, opérant en autonomie avec des accès système. C'est le Shadow AI de 2026 — et il est infiniment plus dangereux que le ChatGPT personnel de 2024.
+
+> [SNIPPET VÉRIFIÉ] *"Shadow AI agents operating with persistent privileged access are the most dangerous unaddressed enterprise risk in 2026."* — Elevateconsult, 2026
+
+**Risque #3 — L'automation complacency** (complaisance d'automatisation)
+Les managers valident les outputs des agents sans les vérifier vraiment. L'EU AI Act (Article 14) et le NIST AI RMF exigent une supervision humaine *entraînée, mesurable et prouvable* — pas juste un clic de validation.
+
+> [SNIPPET VÉRIFIÉ] *"Most organizations put someone 'in the loop' without training them on what to approve, when to escalate, or how to recognize automation complacency."* — Strata.io, 2026
+
+**Risque #4 — La prompt injection sur les agents**
+Un acteur malveillant peut injecter des instructions dans les données qu'un agent lit (un email, un document, une page web), et rediriger les actions de l'agent à l'insu du manager.
+
+**Risque #5 — La gouvernance en retard sur le déploiement**
+72% des entreprises ont adopté des agents IA. Seulement 13% estiment avoir une gouvernance adéquate. 60% de governance gap.
+
+---
+
+### Section 27 — Synthèse : La pyramide de compétences IA 2026
+
+```
+                    ┌─────────────────────────┐
+                    │   GRAPH ENGINEERING      │
+                    │  (équipes d'agents)      │
+                    │  → Architectes IA        │
+                    ├─────────────────────────┤
+                    │   LOOP ENGINEERING       │
+                    │  (systèmes autonomes)    │
+                    │  → Managers augmentés    │
+                    ├─────────────────────────┤
+                    │   PROMPT ENGINEERING     │
+                    │  (instructions précises) │
+                    │  → Tous les salariés     │
+                    └─────────────────────────┘
+```
+
+**Ce que chaque couche demande au manager :**
+
+| Couche | Compétence manager | Horizon |
+|--------|-------------------|---------|
+| Prompt | Formuler un objectif clair, vérifier l'output | Aujourd'hui (2025-2026) |
+| Loop | Déléguer à un système, définir les garde-fous | 2026-2027 |
+| Graph | Concevoir l'organisation IA de son département | 2027-2028 |
+
+**Le saut critique pour les formateurs :** La plupart des formations s'arrêtent au prompt. Le marché court déjà vers les boucles. Dans 18 mois, les managers qui ne comprennent pas les boucles agentiques seront aussi en retard que ceux qui ne comprennent pas Excel en 2010.
+
+---
+
+### Section 28 — Opportunités de positionnement (Module 4)
+
+**Gap 1 : Aucune formation française n'adresse les 3 couches**
+Les offres actuelles couvrent le prompt (couche 1). La couche 2 (loop) est absente du marché formation FR. La couche 3 (graph) n'existe pas encore en format non-technique.
+**Opportunité :** Créer la première formation "Manager à l'ère agentique" qui couvre les 3 couches en langage métier, sans code.
+
+**Gap 2 : Le "human-in-the-loop" n'est pas enseigné aux managers**
+L'EU AI Act Article 14 exige une supervision humaine entraînée et mesurable. Personne ne forme les managers à ça.
+**Opportunité :** Module spécifique "Superviser des agents IA" — comment évaluer, valider, escalader, stopper.
+
+**Gap 3 : Les risques agentiques sont méconnus**
+Les formations cyber/RGPD actuelles couvrent les LLM génériques. Les risques propres aux agents (shadow agents, automation complacency, prompt injection dans les workflows) ne sont couverts nulle part.
+**Opportunité :** Extension du Module 2 (Cyber/RGPD) avec un volet "Agents IA et risques systémiques".
+
+**Gap 4 : La gouvernance agentique est un sujet DRH/Direction**
+76% des entreprises ont un CAIO. Seulement 13% ont une gouvernance adéquate. Les formations actuelles forment des utilisateurs, pas des gouvernants.
+**Opportunité :** Offre "Dirigeant" ou "CODIR" : gouvernance IA, politique agents, audit trails, conformité AI Act Article 14.
+
+---
+
+### Angle de positionnement #6 (issu du Module 4)
+
+**Nom :** "Du Prompt au Pilote"
+
+**Promesse :** *"En 2025, vos managers apprenaient à utiliser l'IA. En 2026, ils doivent apprendre à la piloter. Ce n'est pas la même formation."*
+
+**Structure proposée :**
+- **Niveau 1** (1 jour) : Prompt → outputs utiles, vérification, cas métier
+- **Niveau 2** (2 jours) : Boucles agentiques → déléguer, superviser, gérer les incidents
+- **Niveau 3** (1 jour) : Graphes multi-agents → concevoir l'organisation IA de son département
+
+**Preuve :**
+> *"40% of enterprise applications will include task-specific AI agents by end 2026, up from less than 5% in 2025."* (Gartner)  
+> *"Almost 4 in 5 enterprises have adopted AI agents — yet only 1 in 9 runs them in production."* (Agentic AI Institute)  
+> *"Only 13% believe they have adequate AI governance."* (Elevateconsult)
+
+**Pourquoi c'est différenciant :**
+- Seul positionnement qui anticipe l'évolution (pas juste le présent)
+- Adresse un besoin qui n'existe pas encore pleinement sur le marché — mais existera dans 12-18 mois
+- Permet de créer une relation longue durée (parcours en 3 niveaux, fidélisation)
+- Légitimité unique si on est le premier à le faire sérieusement
+
+**Risque :** Trop en avance sur le marché → les acheteurs DRH ne perçoivent pas encore l'urgence. À coupler avec les Angles #2 (gain de temps) et #4 (RGPD) pour créer l'urgence immédiate.
+
+---
+
+### Sources Module 4 (Prompt → Loop → Graph)
+- [MarkTechPost — Prompt vs Loop vs Graph Engineering (Jul 2026)](https://marktechpost.com/2026/07/29/prompt-engineering-vs-loop-engineering-vs-graph-engineering-what-changes-at-each-layer)
+- [ExplainX — What Is Loop Engineering? (2026)](https://explainx.ai/blog/what-is-loop-engineering-ai-agents-2026)
+- [Lyzr — Loop Engineering vs Prompt Engineering (2026)](https://www.lyzr.ai/blog/loop-engineering-vs-prompt-engineering/)
+- [Medium/Vovance — Loop Engineering: The Skill Replacing Prompting (Jun 2026)](https://medium.com/@vovance/loop-engineering-the-skill-thats-replacing-prompting-d429b000489c)
+- [SmartScope — Loop Engineering from Prompts to Loops (2026)](https://smartscope.blog/en/generative-ai/methodology/loop-engineering-agent-loops-2026/)
+- [ExplainX — Graph Engineering Guide (2026)](https://www.explainx.ai/blog/graph-engineering-ai-agents-multi-agent-organizations-2026)
+- [TrueFoundry — Graph Engineering Enterprise Guide (2026)](https://www.truefoundry.com/blog/graph-engineering-enterprise-guide)
+- [Gartner — 40% enterprise apps with AI agents by 2026](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025)
+- [Agentic AI Institute — 72% production, 60% governance gap (2026)](https://agenticaiinstitute.org/agentic-ai-enterprise-adoption-2026-governance-gap/)
+- [Elevateconsult — Agentic AI Security & Governance (2026)](https://elevateconsult.com/insights/state-of-agentic-ai-security-and-governance-in-2026-what-the-data-reveals/)
+- [Strata.io — Human-in-the-Loop Guide (2026)](https://www.strata.io/blog/agentic-identity/practicing-the-human-in-the-loop/)
+- [Deloitte — The Agentic Reality Check (2026)](https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/agentic-ai-strategy.html)
+- [Raconteur — Autonomous AI Agents 2026 Governance](https://www.raconteur.net/technology/autonomous-ai-agents-2026-the-new-rules-for-business-governance)
+- [Techment — 10 RAG Architectures Enterprise (2026)](https://www.techment.com/blogs/rag-architectures-enterprise-use-cases-2026/)
+- [Unstructured — Agentic RAG for Enterprise AI (2026)](https://unstructured.io/insights/from-static-to-smart-agentic-rag-for-enterprise-ai)
+- [Gartner — Knowledge Graphs & GraphRAG Trends 2026](https://www.gartner.com/en/documents/7444326)
+- [IA-insights.fr — Agents IA autonomes entreprises (2026)](https://www.ia-insights.fr/agents-ia-autonomes-pour-entreprises-le-guide-complet-pour-2026/)
+- [Infos-entreprises.fr — IA agentique 2026 (Fév 2026)](https://infos-entreprises.fr/2026/02/10/ia-agentique-entreprise-2026/)
+- [LangChain — Best AI Agent Frameworks 2026](https://www.langchain.com/resources/ai-agent-frameworks)
+- [Presenc.ai — Multi-Agent Orchestration Frameworks 2026](https://presenc.ai/research/multi-agent-orchestration-frameworks-2026)
+- [Accelirate — Agentic AI 2026 Enterprise Leaders](https://www.accelirate.com/agentic-ai-2026-enterprise-leaders/)
+
+---
+
+*Rapport généré le 2026-06-03 — Mise à jour 2026-08-12 — 84+ sources analysées*
